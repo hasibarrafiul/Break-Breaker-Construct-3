@@ -1,0 +1,70 @@
+{
+	"name": "player",
+	"plugin-id": "Sprite",
+	"sid": 277590477753803,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "alive",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 710509943449405
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 442833649207366
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1823,
+						"height": 1226,
+						"originX": 0.562260010970927,
+						"originY": 0.1639477977161501,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 72963,
+						"collisionPoly": {
+							"points": [
+								0.49972572682391664,
+								0.0016313213703099511,
+								0.7805814591332968,
+								0.04812398042414356,
+								0.9994514536478333,
+								0.8368678629690048,
+								0.811848601206802,
+								0.9991843393148451,
+								0.0005485463521667581,
+								0.9991843393148451,
+								0.0005485463521667581,
+								0.8132137030995106,
+								0.1568842567196928,
+								0.34910277324632955
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 466199367729579,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

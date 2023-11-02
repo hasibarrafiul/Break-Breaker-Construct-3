@@ -1,0 +1,622 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 314180584540380,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 530223713420910,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 121560665683120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 114944787356188,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 253466855259686,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 317271562121447
+		},
+		{
+			"functionName": "setX",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "ball",
+					"sid": 868430710718083,
+					"parameters": {
+						"x": "ball.X+1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 419279089356608,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 384913909776074
+		},
+		{
+			"functionName": "setY",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "ball",
+					"sid": 479949407461246,
+					"parameters": {
+						"y": "ball.Y+1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 515841027416326,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 408577662377662
+		},
+		{
+			"functionName": "setInverseX",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "ball",
+					"sid": 109786810743131,
+					"parameters": {
+						"x": "ball.X-1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 448469791863709,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 237228808922186
+		},
+		{
+			"functionName": "setInverseY",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "ball",
+					"sid": 343499953030897,
+					"parameters": {
+						"y": "ball.Y-1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 702971998906548,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 961548008687686
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ball",
+					"sid": 578841856049777,
+					"parameters": {
+						"object": "rightWall"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 721456023006835,
+					"parameters": {
+						"instance-variable": "inverseX",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 728951139426870
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ball",
+					"sid": 659703833141753,
+					"parameters": {
+						"object": "leftWall"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 213533936701243,
+					"parameters": {
+						"instance-variable": "inverseX",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 920890775378573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ball",
+					"sid": 596814057017705,
+					"parameters": {
+						"object": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 232963287508243,
+					"parameters": {
+						"instance-variable": "inverseY",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 209178599869548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ball",
+					"sid": 834462836282316,
+					"parameters": {
+						"object": "player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 888034229969929,
+					"parameters": {
+						"instance-variable": "inverseY",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 826147253791271
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ball",
+					"sid": 354080704951546,
+					"parameters": {
+						"object": "ground"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 256534322651315,
+					"parameters": {
+						"instance-variable": "alive",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "point",
+					"sid": 193136911982606,
+					"parameters": {
+						"instance-variable": "point",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "point",
+					"sid": 528470140233573,
+					"parameters": {
+						"text": "point.point"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gameOverText",
+					"sid": 516058740854365,
+					"parameters": {
+						"text": "\"GAME OVER\""
+					}
+				}
+			],
+			"sid": 416767548949169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 656561592651143,
+					"parameters": {
+						"first-value": "player.alive",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 372574264366423,
+					"parameters": {
+						"first-value": "ball.inverseX",
+						"comparison": 0,
+						"second-value": "-1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 679196762828131,
+					"parameters": {
+						"first-value": "ball.inverseY",
+						"comparison": 0,
+						"second-value": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "setX",
+					"sid": 450860364983026
+				},
+				{
+					"callFunction": "setY",
+					"sid": 912403207499410
+				}
+			],
+			"sid": 738870061222982
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 754602072035480,
+					"parameters": {
+						"first-value": "player.alive",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 252456871386020,
+					"parameters": {
+						"first-value": "ball.inverseX",
+						"comparison": 0,
+						"second-value": "-1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 209206256869896,
+					"parameters": {
+						"first-value": "ball.inverseY",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "setX",
+					"sid": 379733208019752
+				},
+				{
+					"callFunction": "setInverseY",
+					"sid": 572077591778787
+				}
+			],
+			"sid": 826390550627568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 341881819031379,
+					"parameters": {
+						"first-value": "player.alive",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 350146346305273,
+					"parameters": {
+						"first-value": "ball.inverseX",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 983026134434787,
+					"parameters": {
+						"first-value": "ball.inverseY",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "setInverseX",
+					"sid": 222027836772875
+				},
+				{
+					"callFunction": "setInverseY",
+					"sid": 325926350151105
+				}
+			],
+			"sid": 695429607169432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 816942104231971,
+					"parameters": {
+						"first-value": "player.alive",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 631714088590836,
+					"parameters": {
+						"first-value": "ball.inverseX",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 247633214050109,
+					"parameters": {
+						"first-value": "ball.inverseY",
+						"comparison": 0,
+						"second-value": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "setInverseX",
+					"sid": 476323444373243
+				},
+				{
+					"callFunction": "setY",
+					"sid": 435134581768197
+				}
+			],
+			"sid": 254426588350216
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ball",
+					"sid": 469641464294446,
+					"parameters": {
+						"object": "Brick"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "point",
+					"sid": 414693556979132,
+					"parameters": {
+						"instance-variable": "point",
+						"value": "point.point+1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "point",
+					"sid": 967567574118027,
+					"parameters": {
+						"text": "point.point"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Brick",
+					"sid": 354997769184568
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 797305882993554,
+					"parameters": {
+						"instance-variable": "inverseY",
+						"value": "ball.inverseY*(-1)"
+					}
+				}
+			],
+			"sid": 551320115323083
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 635730720586783,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "ball",
+					"sid": 791345426237409,
+					"parameters": {
+						"x": "337"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "ball",
+					"sid": 656591099340841,
+					"parameters": {
+						"y": "228"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 353369362565945,
+					"parameters": {
+						"instance-variable": "alive",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gameOverText",
+					"sid": 967146125967374,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 772078611952563,
+					"parameters": {
+						"instance-variable": "inverseX",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ball",
+					"sid": 218677949817294,
+					"parameters": {
+						"instance-variable": "inverseY",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 952154084560467
+		}
+	],
+	"sid": 180447916517489
+}

@@ -1,0 +1,27 @@
+{
+	"name": "rightWall",
+	"plugin-id": "TiledBg",
+	"sid": 695992042673727,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 847602702740600
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 195,
+		"height": 110,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2863105,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

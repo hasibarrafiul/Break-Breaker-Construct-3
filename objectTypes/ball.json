@@ -1,0 +1,89 @@
+{
+	"name": "ball",
+	"plugin-id": "Sprite",
+	"sid": 146608638774197,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "inverseX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 420501656572736
+		},
+		{
+			"name": "inverseY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 447123221815773
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 299236738063946
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 360,
+						"height": 360,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 257824,
+						"collisionPoly": {
+							"points": [
+								0.4583333333333333,
+								0.05,
+								0.7138888888888889,
+								0.05,
+								0.8944444444444445,
+								0.275,
+								0.95,
+								0.44166666666666665,
+								0.95,
+								0.5111111111111111,
+								0.85,
+								0.7638888888888888,
+								0.6722222222222223,
+								0.9138888888888889,
+								0.3888888888888889,
+								0.9166666666666666,
+								0.3333333333333333,
+								0.9111111111111111,
+								0.1638888888888889,
+								0.7722222222222223,
+								0.11388888888888889,
+								0.7027777777777777,
+								0.05,
+								0.4027777777777778,
+								0.1388888888888889,
+								0.12777777777777777
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 639811097113944,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

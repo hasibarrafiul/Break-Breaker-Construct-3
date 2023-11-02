@@ -1,0 +1,17 @@
+{
+	"name": "point",
+	"plugin-id": "Text",
+	"sid": 494749585029776,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "point",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 280299439292544
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
